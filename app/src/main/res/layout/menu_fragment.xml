@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.foodapp2.MenuItem" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fragFoodIMG"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_300"
+            android:layout_margin="@dimen/margin_20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/burger" />
+
+        <TextView
+            android:id="@+id/fragFoodTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragFoodIMG"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_25"
+            android:text="@string/Browse"
+            android:paddingStart="@dimen/padding_20"
+            android:layout_margin="@dimen/margin_20" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

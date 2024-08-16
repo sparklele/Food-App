@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Food App 2</string>
+    <string name="menus">menus</string>
+    <string name="Meals">Meals</string>
+    <string name="Browse">Browse</string>
+    <string name="cart">My Cart</string>
+    <string name="plans">Meal Plans</string>
+    <string name="fab_content_desc">floating action button to call the hotline</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="name">Name</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
+    <string name="title_activity_login">ActivityLogin</string>
+</resources>

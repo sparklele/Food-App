@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_grav"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.foodapp2.ListFragment"
+        android:label="ListFragment" >
+        <action
+            android:id="@+id/action_listFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.foodapp2.MenuFragment"
+        android:label="MenuFragment">
+        <argument android:name="item"
+            app:argType="com.example.foodapp2.MenuItem"></argument>
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment3"
+        android:name="com.example.foodapp2.CartFragment"
+        android:label="CartFragment" />
+    <fragment
+        android:id="@+id/plansFragment3"
+        android:name="com.example.foodapp2.PlansFragment"
+        android:label="PlansFragment" />
+
+
+</navigation>

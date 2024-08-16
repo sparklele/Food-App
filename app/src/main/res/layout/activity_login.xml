@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightgrey">
+
+        <ImageView
+            android:id="@+id/loginIMG"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/margin_40" />"
+
+        <TextView
+            android:id="@+id/loginTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginIMG"
+            android:textSize="@dimen/text_30"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LOGIN"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_20" />
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/edittext"
+            app:layout_constraintTop_toBottomOf="@id/loginTV"
+            android:hint="@string/name"
+            android:textSize="@dimen/text_20"
+            android:textColorHint="@color/black"
+            android:layout_margin="@dimen/margin_20"
+            android:padding="@dimen/padding_20" />
+
+        <EditText
+            android:id="@+id/passET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/edittext"
+            app:layout_constraintTop_toBottomOf="@id/nameET"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_20"
+            android:textColorHint="@color/black"
+            android:layout_margin="@dimen/margin_20"
+            android:padding="@dimen/padding_20" />
+
+        <Button
+            android:id="@+id/loginBT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/loginbt"
+            app:layout_constraintTop_toBottomOf="@id/passET"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_20"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/margin_20"
+            android:padding="@dimen/padding_10" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
